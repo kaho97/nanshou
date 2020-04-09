@@ -39,6 +39,8 @@ public class UserController {
         System.out.println(all);
         return ResponseEntity.ok("insert");
     }
+
+
     @GetMapping("findById")
     public ResponseEntity<User> findById(){
         User id = userService.findById("100");
